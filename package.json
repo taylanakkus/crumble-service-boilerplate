@@ -1,0 +1,26 @@
+{
+  "name": "crumble-service-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate of Crumble's micro-services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylanakkus/crumble-service-boilerplate.git"
+  },
+  "keywords": [
+    "crumble",
+    "boilerplate",
+    "services-boilerplate"
+  ],
+  "author": "Taylan Akkuş",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taylanakkus/crumble-service-boilerplate/issues"
+  },
+  "homepage": "https://github.com/taylanakkus/crumble-service-boilerplate#readme"
+}
