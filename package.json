@@ -4,8 +4,9 @@
   "description": "Boilerplate of Crumble's micro-services",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --watch",
     "lint": "eslint \"**/*.js\""
   },
   "repository": {
@@ -31,7 +32,12 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "prettier": "^2.0.5"
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnviroment": "node"
   },
   "dependencies": {
     "cors": "^2.8.5",
