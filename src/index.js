@@ -1,8 +1,6 @@
 const app = require('./config/express');
 const logger = require('./config/logger');
-require('dotenv').config();
-
-const port = process.env.PORT || 3000;
+const {port} = require('./config/vars');
 
 app.listen(port, () => {
   logger.info(`server started on port ${port}`);
