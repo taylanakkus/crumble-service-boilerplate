@@ -1,9 +1,7 @@
-const app = require('./server');
-
-require('dotenv').config();
-
-const port = process.env.PORT || 3000;
+const app = require('./config/express');
+const logger = require('./config/logger');
+const {port} = require('./config/vars');
 
 app.listen(port, () => {
-  console.log(`Server is listening on: ${port}`);
+  logger.info(`server started on port ${port}`);
 });

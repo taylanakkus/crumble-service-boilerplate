@@ -1,13 +1,16 @@
 const express = require('express');
 const cors = require('cors');
+const morgan = require('morgan');
+const {logs} = require('./vars');
 
 const app = express();
 
 // apply middlewares
+app.use(morgan(logs));
 app.use(cors());
 app.use(express.json());
 
-const router = require('../routes');
+const router = require('../api/routes');
 
 app.use('/example', router);
 
