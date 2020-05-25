@@ -1,5 +1,13 @@
+const {findMany} = require('../data-access/index');
+
 module.exports = {
-  example: async (req, res) => {
-    res.send('Empty Server: Please implement it');
+  list: async (req, res) => {
+    try {
+      const exampleList = await findMany();
+
+      res.status(200).json(exampleList);
+    } catch (error) {
+      console.log(error);
+    }
   }
 };
